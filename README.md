@@ -6,7 +6,7 @@
 
 *Clone the repository by entering the command `git clone https://github.com/aeesha-T/UserManagerAppAndDbSetup` in the terminal.
 
-*Navigate to the project folder using `cd UserManager` on your terminal (or command prompt)
+*Navigate to the project folder using `cd UserManagerAppAndDbSetup` on your terminal (or command prompt)
 
 *build the app dockerfile using `docker build -t test/app -f Dockerfile_App .` on your terminal (or command prompt)
 
