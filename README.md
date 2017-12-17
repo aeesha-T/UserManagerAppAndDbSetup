@@ -1,17 +1,24 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-#TO SET UP THE APPLICATION AND DB
-*Start up your terminal
-*Ensure you have node installed on your PC
+# TO SET UP THE APPLICATION AND DB
+*Start up your terminal.
+
+*Ensure you have node installed on your PC.
+
 *Clone the repository by entering the command `git clone https://github.com/aeesha-T/UserManagerAppAndDbSetup` in the terminal.
+
 *Navigate to the project folder using `cd UserManager` on your terminal (or command prompt)
-*build the app dockerfile using 'docker build -t test/app -f Dockerfile_App .' on your terminal (or command prompt)
-*build the mongo db dockerfile using 'docker build -t test/db -f Dockerfile_DB .' on your terminal (or command prompt)
-*run the test/app after building successfully using 'docker run -it test/app'
-*run the test/db after building successfully using 'docker run -it test/db'
+
+*build the app dockerfile using `docker build -t test/app -f Dockerfile_App .` on your terminal (or command prompt)
+
+*build the mongo db dockerfile using `docker build -t test/db -f Dockerfile_DB .` on your terminal (or command prompt)
+
+*run the test/app after building successfully using `docker run -it test/app`
+
+*run the test/db after building successfully using `docker run -it test/db`
 
 
 
-#More Details about the User Manager API
+# More Details about the User Manager API
 # User Manager
 
 This repository contains a simple demo API built with NodeJS.
