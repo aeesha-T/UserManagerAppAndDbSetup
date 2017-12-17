@@ -1,0 +1,22 @@
+FROM node:carbon
+ 
+# Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+ 
+# Install app dependencies
+COPY package.json /usr/src/app/
+RUN npm install
+
+#create .env file and write the config to it
+RUN touch .env
+#RUN echo $'PORT=3000\nDB_URL=\'mongodb://localhost:27017/User\'' > .env
+
+RUN echo "PORT=3000" >> .env
+RUN echo "DB_URL='mongodb://localhost:27017/User'" >> .env
+
+# Bundle app source
+COPY . /usr/src/app
+ 
+EXPOSE 3000
+CMD [ "npm", "start" ]
